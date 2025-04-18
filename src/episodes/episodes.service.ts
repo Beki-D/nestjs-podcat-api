@@ -43,11 +43,11 @@ export class EpisodesService {
       `;
       await this.client.query({ query });
       console.log(
-        'Hasura connection successful:',
+        '✅ Hasura connection successful:',
         this.configService.hasuraGraphqlEndpoint,
       );
     } catch (error) {
-      console.error('Hasura connection failed:', error.message);
+      console.error('❌ Hasura connection failed:', error.message);
     }
   }
 
